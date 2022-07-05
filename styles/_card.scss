@@ -1,0 +1,94 @@
+@use "./variables" as v;
+
+.container {
+    padding: 1.6rem;
+    padding-top: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        background-color: v.$white;
+        border-radius: 1rem;
+        max-width: 45rem;
+
+        .hero {
+            width: 100%;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .card-wrapper {
+            padding: 2.5rem;
+            padding-top: 2rem;
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.46rem;
+                color: v.$dark-grayish-blue;
+            }
+
+            h1 {
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+                font-size: 2.95rem;
+                margin-top: 1rem;
+                margin-bottom: 2.0rem;
+                line-height: 3.1rem;
+                color: v.$very-dark-blue;
+            }
+
+            .description {
+                color: v.$dark-grayish-blue;
+                font-size: 1.29rem;
+                line-height: 2.26rem;
+            }
+
+            .price-wrapper {
+                display: flex;
+                gap: 2.3rem;
+                align-items: center;
+                margin-top: 4.5rem;
+                margin-bottom: 1.8rem;
+
+                .price {
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                    font-size: 3rem;
+                    color: v.$dark-cyan;
+                }
+
+                .old-price {
+                    color: v.$dark-grayish-blue;
+                    text-decoration: line-through;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .btn {
+                background-color: v.$dark-cyan;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                font-size: 1.4rem;
+                color: v.$white;
+                font-weight: 500;
+                padding: 1.4rem;
+                border-radius: 0.6rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: v.$dark-cyan-hover;
+                }
+            }
+
+        }
+    }
+}
